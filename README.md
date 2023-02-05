@@ -10,6 +10,8 @@ This is a repository for the course [18.065: Matrix Methods in Data Analysis, Si
 
 **Resources**: [Piazza discussion forum](https://piazza.com/mit/spring2023/18065), [pset partners](https://psetpartners.mit.edu/).
 
+**Grading**: 50% homework, 50% final project.
+
 **Homework**: Biweekly.  You may consult with other students or any other resources you want, but must write up your solutions *on your own*.
 
 **Exams**: None.
