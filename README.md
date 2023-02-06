@@ -28,7 +28,10 @@ useful study guide.
 
 ## Lecture 1 (Feb 6)
 
-Syllabus (above) and introduction.
+* Syllabus (above) and introduction.
+* ![18.065 overview diagram](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/d6b9603509fe7de36c57a0ed8ebd92d2_chart_300.jpg)
+* Column space, basis, rank, rank-1 matrices, A=CR, and AB=∑(col)(row)
+
 
 ## *Optional* Julia Tutorial: Wed Feb 8 @ 5pm [via Zoom](https://mit.zoom.us/j/96829722642?pwd=TDhhME0wbmx0SG5RcnFOS3VScTA5Zz09)
 
