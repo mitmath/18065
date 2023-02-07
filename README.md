@@ -4,7 +4,7 @@ This is a repository for the course [18.065: Matrix Methods in Data Analysis, Si
 
 **Instructor**: [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj).
 
-**Lectures**: MWF1 in 2-190  Handwritten notes will posted online (link coming soon), along with [video recordings (MIT only)](https://canvas.mit.edu/courses/18680/external_tools/595).
+**Lectures**: MWF1 in 2-190. Handwritten [notes are posted](https://www.dropbox.com/s/zny0l2njkhe5a8c/18.065%20Spring%202023.pdf?dl=0), along with [video recordings (MIT only)](https://canvas.mit.edu/courses/18680/external_tools/595).
 
 **Office hours (virtual):** Thursdays at 4pm [via Zoom](https://mit.zoom.us/j/95322064681?pwd=ZzB3eHllMXpuWnNqc0NaeXZvUXF2dz09).
 
@@ -33,6 +33,7 @@ useful study guide.
 * Syllabus (above) and introduction.
 * ![18.065 overview diagram](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/d6b9603509fe7de36c57a0ed8ebd92d2_chart_300.jpg)
 * Column space, basis, rank, rank-1 matrices, A=CR, and AB=∑(col)(row)
+* See handwritten notes and lecture video linked above.
 
 **Further reading**: Textbook 1.1–1.3. [OCW lecture 1](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-1-the-column-space-of-a-contains-all-vectors-ax/)
 
