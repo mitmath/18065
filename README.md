@@ -108,3 +108,14 @@ The *nice* case of diagonalization is when you have **orthonormal eigenvectors**
 * Analogous definitions of "positive semidefinite" (> 0 replaced by ≥ 0) and negative definite/semidefinite (< 0 / ≤ 0).
 
 **Further reading** [OCW lecture 5](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-5-positive-definite-and-semidefinite-matrices/) and textbook section I.7.   In Julia, the [`isposdef`](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/#LinearAlgebra.isposdef) function checks whether a matrix is positive definite, and does so using a Cholesky factorization (which is just Gaussian elimination speeded up 2× for SPD matrices, and fails if it encounters a negative pivot).   See also [these lecture slides from Stanford](http://www.seas.ucla.edu/~vandenbe/133A/lectures/chol.pdf) for more properties, examples, and applications of SPD matrices.  See the [matrix calculus course at MIT](https://github.com/mitmath/matrixcalc) for a more general presentation of derivatives, gradients, and second derivatives (Hessians) of functions with vector inputs/outputs.
+
+## Lecture 6 (Feb 17)
+
+* "Reduced"/"compact" SVD A=UᵣΣᵣVᵣᵀ=∑σₖuₖvₖᵀ, "full" SVD A=UΣVᵀ, and "thin" SVD (what computers actually return, with zero singular values replaced by tiny roundoff errors).
+* Uᵣ and Vᵣ as the "right" bases for C(A) and C(Aᵀ). Avₖ=σₖvₖ
+* SVD and eigenvalues: U and V as eigenvectors of AAᵀ and AᵀA, respectively, and σₖ² as the positive eigenvalues.
+* Deriving the SVD from eigenvalues: the key step is showing that AAᵀ and AᵀA share the same positive eigenvalues, and λₖ=σₖ², with eigenvectors related by a factor of A. From there you can work backwards to the SVD.
+* pset 1 solutions: coming soon
+* pset 2: coming soon
+
+**Further reading**: [OCW lecture 6](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-6-singular-value-decomposition-svd/) and textbook section I.8.  The [Wikipedia SVD article](https://en.wikipedia.org/wiki/Singular_value_decomposition).
