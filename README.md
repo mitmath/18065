@@ -116,6 +116,6 @@ The *nice* case of diagonalization is when you have **orthonormal eigenvectors**
 * SVD and eigenvalues: U and V as eigenvectors of AAᵀ and AᵀA, respectively, and σₖ² as the positive eigenvalues.
 * Deriving the SVD from eigenvalues: the key step is showing that AAᵀ and AᵀA share the same positive eigenvalues, and λₖ=σₖ², with eigenvectors related by a factor of A. From there you can work backwards to the SVD.
 * [pset 1 solutions](psets/pset1sol.ipynb)
-* pset 2: coming soon
+* [pset 2](psets/pset2.ipynb): Due March 3 at 1pm
 
 **Further reading**: [OCW lecture 6](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-6-singular-value-decomposition-svd/) and textbook section I.8.  The [Wikipedia SVD article](https://en.wikipedia.org/wiki/Singular_value_decomposition).
