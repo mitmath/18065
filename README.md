@@ -130,6 +130,12 @@ The *nice* case of diagonalization is when you have **orthonormal eigenvectors**
 **Further reading**: Textbook sections I.9, I.11, III.5. [OCW lecture 7](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-7-eckart-young-the-closest-rank-k-matrix-to-a/) and [lecture 8](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-8-norms-of-vectors-and-matrices/).
 
 ## Lecture 8 (Feb 22)
-
+* Mean, variance, and covariance.
+* Diagonalizing the covariance matrix: [Principal components analysis (PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis).
 * [PCA demo](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Statistics-and-PCA.ipynb)
+
+**Further reading**: Textbook sections I.9, V.1, V.4.  [OCW lecture 7](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-7-eckart-young-the-closest-rank-k-matrix-to-a/) and [OCW lecture 20](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-20-definitions-and-inequalities/).
+
+## Lecture 9 (Feb 24)
+
 * [Least-squares demo](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Least-Square%20Fitting.ipynb)
