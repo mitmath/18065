@@ -120,7 +120,7 @@ The *nice* case of diagonalization is when you have **orthonormal eigenvectors**
 
 **Further reading**: [OCW lecture 6](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-6-singular-value-decomposition-svd/) and textbook section I.8.  The [Wikipedia SVD article](https://en.wikipedia.org/wiki/Singular_value_decomposition).
 
-## Lecture 6 (Feb 21)
+## Lecture 7 (Feb 21)
 
 * [SVD demo with image "compression"](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/SVD-intro.ipynb)
 * [Low-rank approximation](https://en.wikipedia.org/wiki/Low-rank_approximation) and the Eckart–Young theorem.
@@ -128,3 +128,8 @@ The *nice* case of diagonalization is when you have **orthonormal eigenvectors**
 * [Matrix completion], the ["Netflix problem"](https://en.wikipedia.org/wiki/Netflix_Prize), and the nuclear norm.
 
 **Further reading**: Textbook sections I.9, I.11, III.5. [OCW lecture 7](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-7-eckart-young-the-closest-rank-k-matrix-to-a/) and [lecture 8](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-8-norms-of-vectors-and-matrices/).
+
+## Lecture 8 (Feb 22)
+
+* [PCA demo](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Statistics-and-PCA.ipynb)
+* [Least-squares demo](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Least-Square%20Fitting.ipynb)
