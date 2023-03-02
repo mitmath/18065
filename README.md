@@ -148,8 +148,17 @@ The *nice* case of diagonalization is when you have **orthonormal eigenvectors**
 ## Lecture 10 (Feb 27)
 
 * Training vs test data: [VMLS slides p. 294](https://web.stanford.edu/~boyd/vmls/vmls-slides.pdf#page=294)
-* Conditioning: κ(A) = (max σ)(min σ) is the [condition number](https://en.wikipedia.org/wiki/Condition_number) of a matrix A, and gives us a bound on the "amplification" ‖Δx‖/‖x‖ ≤ κ(a) ‖Δb‖/‖b‖ of the relative error from inputs (b) to outputs (x) when solving Ax=b (including least-squares).   "Ill-conditioned problems" (κ≫1) magnify noise and other errors, and typically require some **regularization** (e.g. dropping smallest σ's) that **trades off robustness for accuracy** ‖b-Ax‖.
+* Conditioning: κ(A) = (max σ)/(min σ) is the [condition number](https://en.wikipedia.org/wiki/Condition_number) of a matrix A, and gives us a bound on the "amplification" ‖Δx‖/‖x‖ ≤ κ(a) ‖Δb‖/‖b‖ of the relative error from inputs (b) to outputs (x) when solving Ax=b (including least-squares).   "Ill-conditioned problems" (κ≫1) magnify noise and other errors, and typically require some **regularization** (e.g. dropping smallest σ's) that **trades off robustness for accuracy** ‖b-Ax‖.
 * Ridge/Tikhonov/ℓ² regularization: minimize ‖b-Ax‖₂² + δ²‖x‖₂² for some *penalty* δ≠0 to push the solution towards smaller x.  (More generally, δ²‖Dx‖₂² for some matrix D.)  This gives (AᵀA+δ²I)x̂=Aᵀb, which is similar to A⁺b but replaces 1/σ with σ/(σ²+δ²).  Effectively, this drops small σ's, but doesn't require an SVD and generalizes to other types of penalties.  (Example: [VMLS slides pg. 346](https://web.stanford.edu/~boyd/vmls/vmls-slides.pdf#page=346).)
 * Under-determined problems: for "wide" matrices, Ax=b has many solutions (we can add any N(A) vector to a solution).  A common way to pick a solution is to pick the **minimum-norm** solution: minimize ‖x‖₂ subject to Ax=b.  (It turns out that this gives x̂=A⁺b!)
 
 **Further reading**: Training/test data: [VMLS section 13.2](https://web.stanford.edu/~boyd/vmls/vmls.pdf#page=270). Condition numbers: Strang exercises II.3, [OCW video lecture 10](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-10-survey-of-difficulties-with-ax-b/), and [these 18.06 notes](https://github.com/mitmath/1806/blob/master/notes/Conditioning.ipynb); a more in-depth treatment can be found in e.g. *Numerical Linear Algebra* by Trefethen and Bau (the 18.335 textbook).  Tikhonov regularization: Strang section II.2, OCW video lecture 10, [VMLS section 15.3](https://web.stanford.edu/~boyd/vmls/vmls.pdf#page=326).  Underdetermined minimum-norm solutions: Strang section II.2, [OCW video lecture 11](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-11-minimizing-2016x2016-subject-to-ax-b/), [UIUC *Nonlinear Programming* lecture notes](https://faculty.math.illinois.edu/~mlavrov/docs/484-spring-2019/ch4lec4.pdf).
+
+## Lecture 11 (Mar 1)
+
+* Minimum-norm solutions x̂=A⁺b=Aᵀ(AAᵀ)⁻¹: smallest ‖x‖₂ for underdetermined problems Ax=b for "wide" A.
+* Other common norms: ℓ¹ and ℓ<sup>∞</sup>, and sparsity with ‖x‖₁ norm ([LASSO regularization](https://en.wikipedia.org/wiki/Lasso_(statistics))).
+* Avoid AᵀA: it squares the condition number κ(AᵀA)=κ(A)²
+* Gram–Schmidt orthogonalization and QR factorization.
+
+**Further reading**: Strang II.2, II.4.
