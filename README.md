@@ -12,9 +12,9 @@ This is a repository for the course [18.065: Matrix Methods in Data Analysis, Si
 
 **Resources**: [Piazza discussion forum](https://piazza.com/mit/spring2023/18065), [pset partners](https://psetpartners.mit.edu/).
 
-**Grading**: 50% homework, 50% final project.   Psets are accepted until solutions are posted (sometime Friday); extensions require permission of instructor.
+**Grading**: 50% homework, 50% final project.
 
-**Homework**: Biweekly, due Fridays (2/17, 3/3, 3/17, 4/7, 4/21, 5/5) [on Canvas](https://canvas.mit.edu/courses/18680).  You may consult with other students or any other resources you want, but must write up your solutions *on your own*.
+**Homework**: Biweekly, due Fridays (2/17, 3/3, 3/17, 4/7, 4/21, 5/5) [on Canvas](https://canvas.mit.edu/courses/18680).  You may consult with other students or any other resources you want, but must write up your solutions *on your own*.  Psets are accepted until solutions are posted (sometime Friday); extensions require permission of instructor.
 
 **Exams**: None.
 
