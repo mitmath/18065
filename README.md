@@ -174,7 +174,7 @@ The *nice* case of diagonalization is when you have **orthonormal eigenvectors**
   - Randomized linear algebra: by multiplying A on the left/right by small random wide/thin matrices, carefully chosen, we can construct an approximate "sketch" of A that can be used to estimate the SVD, solutions to least-squares, etcetera, and can also accelerate iterative solvers.
   - Tricks for special cases: there are various specialized techniques for convolution/circulant matrices (via FFTs), [banded matrices](https://en.wikipedia.org/wiki/Band_matrix) (linear-time methods), and low-rank updates ([Sherman–Morrison formula](https://en.wikipedia.org/wiki/Sherman%E2%80%93Morrison_formula))
 * [pset 2 solutions](psets/pset2sol.ipynb)
-* pset 3 (due 3/17): coming soon
+* [pset 3](psets/pset3.ipynb) (due 3/17)
 
 **Further reading:** For Gram–Schmidt and QR, see further reading for lecture 9.  Texbook section II.1, [OCW video lecture 10](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-10-survey-of-difficulties-with-ax-b/). Sparse-direct solvers are described in detail by the book *Direct Methods for Sparse Linear Systems* by Davis.  Iterative methods: More advanced treatments include the book *Numerical Linear Algebra* by Trefethen and Bao, and surveys of algorithms can be found in the *Templates* books for [Ax=b](http://www.netlib.org/linalg/html_templates/Templates.html) and [Ax=λx](http://web.cs.ucdavis.edu/~bai/ET/contents.html).  [Some crude rules of thumb](https://github.com/mitmath/18335/blob/spring20/notes/solver-options.pdf) for solving linear systems (from 18.335 spring 2020).
 
