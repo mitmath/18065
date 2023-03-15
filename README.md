@@ -198,6 +198,20 @@ The *nice* case of diagonalization is when you have **orthonormal eigenvectors**
 
 **Further reading:** See links above, and further reading from lecture 13.
 
+## Lecture 15 (Mar 10)
+
+* [Weighted least squares (WLS)](https://en.wikipedia.org/wiki/Weighted_least_squares) and [generalized least squares (GLS)](https://en.wikipedia.org/wiki/Generalized_least_squares): when fitting a model with noisy measurements, we want to *weight* the least-squares minimization inversely with the errors (variances) in the measurements (WLS), or more generally with the inverse of the measurement correlation matrix (GLS); see textbook section V.5.
+ - Reviewed correlation matrix V and its positive semidefiniteness/definiteness (textbook section V.4).
+ - Framed in terms of minimizing a [weighted ℓ² norm](https://math.stackexchange.com/questions/394237/understanding-weighted-inner-product-and-weighted-norms) ‖b-Ax‖<sub>V⁻¹</sub> and gave the WLS formula x̂=(AᵀV⁻¹A)⁻¹AᵀV⁻¹b = Lb.
+ - This is an [unbiased estimator](https://en.wikipedia.org/wiki/Bias_of_an_estimator) if the measurement errors are unbiased.
+ - Correlation matrix ("error bars") in the estimate x̂ is then given by W=LVLᵀ=(AᵀV⁻¹A)⁻¹ (textbook V.5).
+* [Gauss–Markov theorem](https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_theorem): WLS/GLS is the unbiased linear estimator that *minimizes the variance* of the estimated parameters x.
+  - in particular, showed that *any* other unbiased linear estimator gives a covariance W′ = W + (positive semidefinite), which results in ‖W′‖≥‖W‖ in the ℓ² (induced) or Frobenius norms
+  - this means that OLS squares is the best choice when the errors are unbiased, independent, and have equal variances (["homoskedastic"](Homoscedasticity_and_heteroscedasticity))
+
+**Further reading:** In addition to the links above, these subjects are covered in countless statistics textbooks and courses.  For example, see [these course notes from CMU](https://www.stat.cmu.edu/~cshalizi/mreg/15/lectures/24/lecture-24--25.pdf)
+
+
 ## Lecture 16 (Mar 13)
 
 * [Optimization overview](https://docs.google.com/presentation/d/1K8BFfd-_6IWML2zpj_V88GvBjuJiK8EPHqYabDMU3CU/edit?usp=sharing) slides
@@ -205,3 +219,13 @@ The *nice* case of diagonalization is when you have **orthonormal eigenvectors**
 Broad overview of optimization problems (see slides). The most general formulation is actually quite difficult to solve, so most algorithms (especially the most efficient algorithms) solve various special cases, and it is important to know what the key factors are that distinguish a particular problem. There is also something of an art to the problem formulation itself, e.g. a nondifferentiable minimax problem can be reformulated as a nicer differentiable problem with differentiable constraints.
 
 **Further reading:** There are many textbooks on [nonlinear optimization](http://www.athenasc.com/nonlinbook.html) algorithms of various sorts, including specialized books on [convex optimization](http://web.stanford.edu/~boyd/cvxbook/), [derivative-free optimization](http://bookstore.siam.org/mp08/), etcetera.  A useful review of topology-optimization methods can be found in [Sigmund and Maute (2013)](https://link.springer.com/article/10.1007/s00158-013-0978-6).
+
+## Lecture 17 (Mar 15)
+
+* Matrix calculus — see also [our IAP 2023 course 18.S096](https://github.com/mitmath/matrixcalc).
+
+Reviewed and broadened differential calculus (18.01 and 18.02) from the perspective of 18.06, where we view a derivative f′(x) as a [linear operator](https://en.wikipedia.org/wiki/Linear_map) acting on a small change in the input (dx) to give you the change in the output (df) to *first order* in dx ("linearized").   This viewpoint makes it easy to generalize derivatives, to scalar-valued functions of vectors where f′(x) is the transposed gradient (∇f)ᵀ, to vector-valued functions of vectors where f′(x) is the [Jacobian matrix](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant), and even to matrix-valued functions of matrices like f(x)=A² ⥰ df = A×dA+dA×A or f(x)=A⁻¹ ⥰ df=–A⁻¹×dA×A⁻¹; in both these cases f′(x) is a linear operator f′(x)[dA] that takes dA in and gives df out, but *cannot* be written simply as (matrix)×dA.
+
+Derivatives viewed as linear approximations have many important applications in science, machine learning, statistics, and engineering. For example, ∇f is essential for large-scale optimization of scalar-valued functions f(x), and we will see that *how* you compute the gradient is also critical for practical reasons.  As another example, there is the **multidimensional Newton** algorithm for finding roots f(x)=0 of systems of nonlinear equations: At each step, you just solve a *linear* system of equations with the Jacobian matrix of f(x), and it converges incredibly rapidly.
+
+**Further reading**: This material was presented in much greater depth in our [18.S096: Matrix Calculus](https://github.com/mitmath/matrixcalc) course in IAP 2022 and IAP 2023.    The viewpoint of derivatives as linear operators (also called [Fréchet derivatives](https://en.wikipedia.org/wiki/Fr%C3%A9chet_derivative)) was covered in lectures 1 and 2 of 18.S096, Newton's method was covered in lecture 4, and automatic differentiation was covered in lectures 5 and 8 — see the posted lecture materials and the further-reading links therein.   This [notebook](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Newton-Thomson-example.ipynb) has a Newton's method example demo where we solve a 2d version of the famous [Thomson problem](https://en.wikipedia.org/wiki/Thomson_problem) to find the equilibrium position of N repulsive "point charges" constrained to lie on a circle; more generally, a sphere or hypersphere.
