@@ -233,7 +233,7 @@ Derivatives viewed as linear approximations have many important applications in 
 ## Lecture 18 (Mar 17)
 
 * d(A⁻¹), adjoint problems, chain rules, and forward vs reverse mode (backpropagation) derivatives
-* pset 3 solutions: coming soon
+* [pset 3 solutions](psets/pset3sol.ipynb)
 * pset 4: coming soon, due 4/7
 
 Showed that d(A⁻¹)=–A⁻¹ dA A⁻¹.  (For example, if you have a matrix A(t) that depends on a scalar t∈ℝ, this tells you that d(A⁻¹)/dt = –A⁻¹ dA/dt A⁻¹.)   Applied this to computing ∇ₚf for scalar functions f(A⁻¹b) where A(p) depends on some parameters p∈ℝⁿ, and showed that ∂f/∂pᵢ = -(∇ₓf)ᵀA⁻¹(∂A/∂pᵢ)x.  Moreover, showed that it is critically important to evaluate this expression from *left to right*, i.e. first computing vᵀ=-(∇ₓf)ᵀA⁻¹m, which corresponds to solving the "adjoint (transposed) equation" Aᵀv=–∇ₓf.  By doing so, you can compute both f and ∇ₚf at the cost of only "two solves" with matrices A and Aᵀ.  This is critically important in enabling engineering/physics optimization, where you often want to optimize a property of the solution A⁻¹b of a physical model A depending on many design variables p (e.g. the distribution of materials in space).
