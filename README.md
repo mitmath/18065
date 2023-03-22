@@ -253,6 +253,6 @@ More generally, presented the chain rule for f(g(x)) (f'(x)=g'(h(x))h'(x), where
 
 ## Lecture 20 (Mar 22)
 
-* Momentum terms and accelerated gradient descent
+* Momentum terms, [nonlinear conjugate gradient](https://en.wikipedia.org/wiki/Nonlinear_conjugate_gradient_method), and accelerated gradient descent
 
-**Further reading**: [Lecture notes](http://mitliagkas.github.io/ift6085-2020/ift-6085-lecture-6-notes.pdf) from I. Mitliagkas at Univ. Montréal; and more [lecture notes](http://www.damtp.cam.ac.uk/user/hf323/M19-OPT/lecture5.pdf) from H. Fawzi at Cambridge Univ.
+**Further reading**: [Lecture notes](http://mitliagkas.github.io/ift6085-2020/ift-6085-lecture-6-notes.pdf) from I. Mitliagkas at Univ. Montréal; and more [lecture notes](http://www.damtp.cam.ac.uk/user/hf323/M19-OPT/lecture5.pdf) from H. Fawzi at Cambridge Univ.  A recent article by [Karimi and Vavasis (2021)](https://arxiv.org/abs/2111.11613) presents an algorithm that blends the strengths of nonlinear conjugate gradient and accelerated gradient descent.
