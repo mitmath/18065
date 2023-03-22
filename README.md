@@ -250,3 +250,9 @@ More generally, presented the chain rule for f(g(x)) (f'(x)=g'(h(x))h'(x), where
 * Example application: iteratively solving Ax=b (for A=Aᵀ positive definite) by minimizing f(x)=xᵀAx - xᵀb.  (See also the end of this [example notebook](https://github.com/mitmath/1806/blob/fall22/notes/Dense-and-Sparse.ipynb).)
 
 **Further reading**: Strang section VI.4; [OCW lecture 21](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-21-minimizing-a-function-step-by-step/) and [OCW lecture 22](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-22-gradient-descent-downhill-to-a-minimum/).
+
+## Lecture 20 (Mar 22)
+
+* Momentum terms and accelerated gradient descent
+
+**Further reading**: [Lecture notes](http://mitliagkas.github.io/ift6085-2020/ift-6085-lecture-6-notes.pdf) from I. Mitliagkas at Univ. Montréal.
