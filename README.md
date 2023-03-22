@@ -255,4 +255,4 @@ More generally, presented the chain rule for f(g(x)) (f'(x)=g'(h(x))h'(x), where
 
 * Momentum terms and accelerated gradient descent
 
-**Further reading**: [Lecture notes](http://mitliagkas.github.io/ift6085-2020/ift-6085-lecture-6-notes.pdf) from I. Mitliagkas at Univ. Montréal.
+**Further reading**: [Lecture notes](http://mitliagkas.github.io/ift6085-2020/ift-6085-lecture-6-notes.pdf) from I. Mitliagkas at Univ. Montréal; and more [lecture notes](http://www.damtp.cam.ac.uk/user/hf323/M19-OPT/lecture5.pdf) from H. Fawzi at Cambridge Univ.
