@@ -263,3 +263,18 @@ More generally, presented the chain rule for f(g(x)) (f'(x)=g'(h(x))h'(x), where
 * [Stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent): [Julia notebook](notes/Stochastic-Gradient-Descent.ipynb)
 
 **Further reading:** Strang section VI.5 and [OCW lecture 25](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-25-stochastic-gradient-descent/).  There are many, many tutorials on this topic online. See also the links and references in the [Julia notebook](notes/Stochastic-Gradient-Descent.ipynb).
+
+## Lecture 22 (Mar 24)
+
+* [slides from Boyd, chapter 5](https://github.com/mitmath/18335/blob/spring21/notes/boyd-ch5-slides.pdf)
+
+In order to handle optimization problems with constraints, it's useful
+to first generalize the local optimality criterion ∇f₀=0 for unconstrained problems, and this leads us into **Lagrangians**, **duality**, and **KKT conditions**.
+
+Started by reviewing the basic idea of Lagrange multipliers to find an extremum of one function f₀(x) and one equality constraint h₁(x)=0. We instead find an extremum of L(x,ν₁)=f₀(x)+ν₁h₁(x) over x and the _Lagrange multiplier_ ν₁. The ν₁ partial derivative of L ensures h₁(x)=0, in which case L=f0 and the remaining derivatives extremize f0 along the constraint surface. Noted that ∇L=0 then enforces ∇f₀=0 in the direction parallel to the constraint, whereas perpendicular to the constraint ν₁ represents a "force" that prevents x from leaving the h₁(x)=0 constraint surface.
+
+Generalized to the Lagrangian L(x,λ,ν) of the general optimization problem (the "primal" problem) with both inequality and equality constraints, following chapter 5 of the Boyd and Vandenberghe book (see below) (section 5.1.1).
+
+Described the KKT conditions for a (local) optimum/extremum (Boyd, section 5.5.3). These are true in problems with strong duality, as pointed out by Boyd, but they are actually true in much more general conditions. For example, they hold under the "LICQ" condition in which the gradients of all the active constraints are linearly independent.
+
+**Further reading:** _[Convex Optimization](http://www.stanford.edu/~boyd/cvxbook/)_ by Boyd and Vandenberghe (free book online), chapter 5. There are many sources on [Lagrange multipliers](http://en.wikipedia.org/wiki/Lagrange_multipliers) (the special case of equality constraints) online that can be found by googling.
