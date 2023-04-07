@@ -284,3 +284,21 @@ Described the KKT conditions for a (local) optimum/extremum (Boyd, section 5.5.3
 * Using duality to solve optimization problems: [Augmented Lagrangian methods](https://en.wikipedia.org/wiki/Augmented_Lagrangian_method) and ADMM
 
 **Further reading:** See the textbook sections III.3–III.4.  These [slides](https://pages.cs.wisc.edu/~swright/nd2016/IMA_augmentedLagrangian.pdf) by Stephen J. Wright at Univ. Wisc. are similar (but more in depth) to the approach from lecture.  This [2011 seminar by Stephen Boyd](http://videolectures.net/nipsworkshops2011_boyd_multipliers/) on ADMM may also be useful, and you can find many other resources online.  Many of these sources cover only equality constraints, but augmented Lagrangians can also be used for inequality constraints, e.g. as described in [Birgin et al. (2007)](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.72.6121).
+
+
+## Lecture 24 (Apr 7)
+
+* Quick review of augmented Lagrangians and ADMM from last lecture. Indicator function example from section III.4.
+* CCSA interior-point algorithm
+* pset 4 solutions: coming soon
+* pset 5: coming soon, due 4/21
+
+Went over very different example of a nonlinear optimization scheme, solving a fairly general inequality-constrained nonlinear-programming problem: the CCSA algorithm(s), as described by Svanberg (2002). This is a surprisingly simple algorithm (the [NLopt](http://ab-initio.mit.edu/nlopt) implementation is only 300 lines of C code), but is robust and provably convergent, and illustrates a number of important ideas in optimization: optimizing an approximation to update the parameters **x**, guarding the approximation with trust regions and penalty terms, and optimizing via the dual function (Lagrange multipliers). Like many optimization algorithms, the general ideas are very straightforward, but getting the details right can be delicate!
+
+Outlined the inner/outer iteration structure of CCSA, and the interesting property that it produces a sequence of feasible iterates from a feasible starting point, which means that you can stop it early and still have a feasible solution (which is very useful for many applications where 99% of optimal is fine, but feasibility is essential).  It could be thought of as a type of "interior point" algorithm.
+
+The inner optimization problem involving the approximate gᵢ functions turns out to be *much* easier to solve because it is *convex* and *separable* (gᵢ = a sum of 1d convex functions of each coordinate xⱼ).  Convexity allows us to use **strong duality** to turn the problem into an equivalent "dual" optimization problem, and separability makes this dual problem trivial to formulate and solve.
+
+**Further reading:** Pages 1–10 of [Svanberg (2002) paper on CCSA algorithms](
+http://dx.doi.org/10.1137/S1052623499362822) — I used the "linear and separable quadratic approximation" functions gᵢ in section 5.1; as far as I can tell the other example gᵢ functions have no general advantages.
+ (I presented a simplified form of CCSA compared to the paper, in which the per-variable scaling/trust parameters σⱼ are omitted.  These can be quite useful in practice, especially if different variables have very different scalings in your problem.)
