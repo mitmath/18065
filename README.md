@@ -264,7 +264,7 @@ More generally, presented the chain rule for f(g(x)) (f'(x)=g'(h(x))h'(x), where
 
 **Further reading:** Strang section VI.5 and [OCW lecture 25](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-25-stochastic-gradient-descent/).  There are many, many tutorials on this topic online. See also the links and references in the [Julia notebook](notes/Stochastic-Gradient-Descent.ipynb).
 
-## Lecture 22 (Mar 24)
+## Lecture 22 (Apr 3)
 
 * [slides from Boyd, chapter 5](https://github.com/mitmath/18335/blob/spring21/notes/boyd-ch5-slides.pdf)
 
@@ -278,3 +278,9 @@ Generalized to the Lagrangian L(x,λ,ν) of the general optimization problem (th
 Described the KKT conditions for a (local) optimum/extremum (Boyd, section 5.5.3). These are true in problems with strong duality, as pointed out by Boyd, but they are actually true in much more general conditions. For example, they hold under the "LICQ" condition in which the gradients of all the active constraints are linearly independent.
 
 **Further reading:** _[Convex Optimization](http://www.stanford.edu/~boyd/cvxbook/)_ by Boyd and Vandenberghe (free book online), chapter 5. There are many sources on [Lagrange multipliers](http://en.wikipedia.org/wiki/Lagrange_multipliers) (the special case of equality constraints) online that can be found by googling.
+
+## Lecture 23 (Apr 5)
+
+* Using duality to solve optimization problems: [Augmented Lagrangian methods](https://en.wikipedia.org/wiki/Augmented_Lagrangian_method) and ADMM
+
+**Further reading:** See the textbook sections III.3–III.4.  These [slides](https://pages.cs.wisc.edu/~swright/nd2016/IMA_augmentedLagrangian.pdf) by Stephen J. Wright at Univ. Wisc. are similar (but more in depth) to the approach from lecture.  This [2011 seminar by Stephen Boyd](http://videolectures.net/nipsworkshops2011_boyd_multipliers/) on ADMM may also be useful, and you can find many other resources online.  Many of these sources cover only equality constraints, but augmented Lagrangians can also be used for inequality constraints, e.g. as described in [Birgin et al. (2007)](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.72.6121).
