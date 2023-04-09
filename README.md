@@ -302,3 +302,9 @@ The inner optimization problem involving the approximate gᵢ functions turns ou
 **Further reading:** Pages 1–10 of [Svanberg (2002) paper on CCSA algorithms](
 http://dx.doi.org/10.1137/S1052623499362822) — I used the "linear and separable quadratic approximation" functions gᵢ in section 5.1; as far as I can tell the other example gᵢ functions have no general advantages.
  (I presented a simplified form of CCSA compared to the paper, in which the per-variable scaling/trust parameters σⱼ are omitted.  These can be quite useful in practice, especially if different variables have very different scalings in your problem.)
+
+## Lecture 25 (April 10)
+
+* Compressive sensing (CS) and ℓ¹ regularization (LASSO etc.).
+
+**Further reading:** There are many tutorials and other information on CS/LASSO/etcetera online.  For example, these [Rice Univ. tutorial slides (2019)](https://www.epfl.ch/labs/lions/wp-content/uploads/2019/01/Volkan-CS-IPSN09-tutorial-part-1.pdf) by Volkan Cevher are fairly accessible.
