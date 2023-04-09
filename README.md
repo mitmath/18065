@@ -291,7 +291,7 @@ Described the KKT conditions for a (local) optimum/extremum (Boyd, section 5.5.3
 * Quick review of augmented Lagrangians and ADMM from last lecture. Indicator function example from section III.4.
 * CCSA interior-point algorithm
 * [pset 4 solutions](psets/pset4sol.ipynb)
-* pset 5: coming soon, due 4/21
+* [pset 5](psets/pset5.ipynb): due 4/21
 
 Went over very different example of a nonlinear optimization scheme, solving a fairly general inequality-constrained nonlinear-programming problem: the CCSA algorithm(s), as described by Svanberg (2002). This is a surprisingly simple algorithm (the [NLopt](http://ab-initio.mit.edu/nlopt) implementation is only 300 lines of C code), but is robust and provably convergent, and illustrates a number of important ideas in optimization: optimizing an approximation to update the parameters **x**, guarding the approximation with trust regions and penalty terms, and optimizing via the dual function (Lagrange multipliers). Like many optimization algorithms, the general ideas are very straightforward, but getting the details right can be delicate!
 
