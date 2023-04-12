@@ -309,3 +309,10 @@ http://dx.doi.org/10.1137/S1052623499362822) — I used the "linear and separabl
 * [Slides](https://www.dropbox.com/s/iplx3gsk42t0xlb/Various-CS-slides.pdf?dl=0) collected from various sources.
 
 **Further reading:** Strang textbook, section III.5.  There are many tutorials and other information on CS/LASSO/etcetera online.  For example, these [Rice Univ. tutorial slides (Cevher, 2019)](https://www.epfl.ch/labs/lions/wp-content/uploads/2019/01/Volkan-CS-IPSN09-tutorial-part-1.pdf) or [Princeton Slides (Cheng, 2014)](https://3dvision.princeton.edu/courses/COS598/2014sp/slides/lecture20_Compressive_Sensing.pdf) are fairly accessible.  For compressed sensing in MRI, see e.g. the slides by [Lustig et al.](https://pages.cs.wisc.edu/~brecht/cs838docs/deshpande.project.pdf) and [Tamir (2019)](http://users.ece.utexas.edu/~jtamir/files/jtamir_compressed_sensing_ismrm19.pdf) and many other sources.
+
+## Lecture 26 (April 12)
+
+* Neural networks, ReLU, and classification
+* demo: [playground.tensorflow.org](http://playground.tensorflow.org/)
+
+**Further reading:** Strang section VII.1 and [OCW lecture 26](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-26-structure-of-neural-nets-for-deep-learning/).
