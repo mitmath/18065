@@ -322,3 +322,9 @@ http://dx.doi.org/10.1137/S1052623499362822) — I used the "linear and separabl
 * Backpropagation for neural networks.
 
 **Further reading:** Strang section VII.3 and [OCW lecture 27](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-27-backpropagation-find-partial-derivatives/).  You can find many, many articles online about [backpropagation](https://en.wikipedia.org/wiki/Backpropagation) in neural networks.   For generalizing gradients to scalar-valued functions of matrices and other abstract vector spaces, what we need is an inner product; we covered this in more detail in [lecture 4 of *Matrix Calculus* (IAP 2023)](https://github.com/mitmath/matrixcalc#lecture-4-jan-25).   Backpropagation for neural networks is closely related to backpropagation/adjoint methods [for recurrence relations (course notes)](https://math.mit.edu/~stevenj/18.336/recurrence2.pdf), and [on computational graphs (blog post)](https://colah.github.io/posts/2015-08-Backprop/); see also [lecture 8 of *Matrix Calculus* (IAP 2023)](https://github.com/mitmath/matrixcalc#lecture-8-feb-3).
+
+## Lecture 28 (Apr 19)
+
+* Non-negative matrix factorization — guest lecture by [Prof. Ankur Moitra](https://people.csail.mit.edu/moitra/).
+
+**Further reading:** Coming soon.
