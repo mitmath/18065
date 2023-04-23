@@ -332,7 +332,7 @@ http://dx.doi.org/10.1137/S1052623499362822) — I used the "linear and separabl
 ## Lecture 29 (Apr 21)
 
 * [(Discrete) convolutions](https://en.wikipedia.org/wiki/Convolution#Discrete_convolution), translation-invariance, [circulant matrices](https://en.wikipedia.org/wiki/Circulant_matrix), and convolutional neural networks (CNNs)
-* pset 5 solutions:
+* [pset 5 solutions](psets/pset5sol.ipynb)
 * pset 6: coming soon, due Friday May 5.
 
 **Further reading:** Strang textbook sections IV.2 (circulant matrices) and VII.2 (CNNs), and [OCW lecture 32](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-32-imagenet-is-a-cnn-the-convolution-rule/).  See also these [Stanford lecture slides](http://cs231n.stanford.edu/slides/2016/winter1516_lecture7.pdf) and [MIT lecture slides](https://mit6874.github.io/assets/sp2020/slides/L03_CNNs_MK2.pdf).
