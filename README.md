@@ -336,3 +336,16 @@ http://dx.doi.org/10.1137/S1052623499362822) — I used the "linear and separabl
 * pset 6: coming soon, due Friday May 5.
 
 **Further reading:** Strang textbook sections IV.2 (circulant matrices) and VII.2 (CNNs), and [OCW lecture 32](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-32-imagenet-is-a-cnn-the-convolution-rule/).  See also these [Stanford lecture slides](http://cs231n.stanford.edu/slides/2016/winter1516_lecture7.pdf) and [MIT lecture slides](https://mit6874.github.io/assets/sp2020/slides/L03_CNNs_MK2.pdf).
+
+## Lecture 30 (Apr 24)
+* Backpropagation and convolutions: differentiating with respect to convolution coefficients involves a convolution!  via identity uᵀ(a⊛v)=aᵀ(Rv⊛u).
+* The [discrete Fourier transform (DFT)](https://en.wikipedia.org/wiki/Discrete_Fourier_transform) and its inverse: [roots of unity](https://en.wikipedia.org/wiki/Root_of_unity), unitarity, diagonalizing convolutions.
+
+**Further reading**: Textbook section IV.1 and VII.2.
+
+## Lecture 31 (Apr 24)
+* Proof of the [convolution theorem](https://en.wikipedia.org/wiki/Convolution_theorem): a DFT diagonalizes circular convolutions
+* Convolutions y=a⊛x via DFT: DFT a and x, multiply elementwise, then inverse-DFT to obtain y!
+* [Fast Fourier transforms (FFTs)](https://en.wikipedia.org/wiki/Fast_Fourier_transform): DFTs (and many related problems) in O(N log N) operations.  Derived the [Cooley–Tukey FFT algorithm](https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm) and mentioned a few other algorithms.  See [slides](https://github.com/mitmath/18335/blob/spring21/notes/FFT.pdf).
+
+**Further reading**: Textbook sections IV.1–IV.2 and [OCW lecture 31](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-31-eigenvectors-of-circulant-matrices-fourier-matrix/) and [lecture 32](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-32-imagenet-is-a-cnn-the-convolution-rule/).  The [Wikipedia FFT article](https://en.wikipedia.org/wiki/Fast_Fourier_transform) (partially written by SGJ) was still not bad last I checked. [Gauss and the history of the fast Fourier transform](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.309.181) (1985) is a wonderful article on the historical development of the FFT.  [Duhamel & Vetterli (1990)](https://doi.org/10.1016%2F0165-1684%2890%2990158-U) is a classic review article.  SGJ co-developed a little FFT library called [FFTW](https://www.fftw.org/).
