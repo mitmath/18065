@@ -333,7 +333,6 @@ http://dx.doi.org/10.1137/S1052623499362822) — I used the "linear and separabl
 
 * [(Discrete) convolutions](https://en.wikipedia.org/wiki/Convolution#Discrete_convolution), translation-invariance, [circulant matrices](https://en.wikipedia.org/wiki/Circulant_matrix), and convolutional neural networks (CNNs)
 * [pset 5 solutions](psets/pset5sol.ipynb)
-* pset 6: coming soon, due Friday May 5.
 
 **Further reading:** Strang textbook sections IV.2 (circulant matrices) and VII.2 (CNNs), and [OCW lecture 32](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-32-imagenet-is-a-cnn-the-convolution-rule/).  See also these [Stanford lecture slides](http://cs231n.stanford.edu/slides/2016/winter1516_lecture7.pdf) and [MIT lecture slides](https://mit6874.github.io/assets/sp2020/slides/L03_CNNs_MK2.pdf).
 
@@ -351,6 +350,8 @@ http://dx.doi.org/10.1137/S1052623499362822) — I used the "linear and separabl
 **Further reading**: Textbook sections IV.1–IV.2 and [OCW lecture 31](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-31-eigenvectors-of-circulant-matrices-fourier-matrix/) and [lecture 32](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-32-imagenet-is-a-cnn-the-convolution-rule/).  The [Wikipedia FFT article](https://en.wikipedia.org/wiki/Fast_Fourier_transform) (partially written by SGJ) was still not bad last I checked. [Gauss and the history of the fast Fourier transform](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.309.181) (1985) is a wonderful article on the historical development of the FFT.  [Duhamel & Vetterli (1990)](https://doi.org/10.1016%2F0165-1684%2890%2990158-U) is a classic review article.  SGJ co-developed a little FFT library called [FFTW](https://www.fftw.org/).
 
 ## Lecture 32 (Apr 25)
+
+* [pset 6](psets/pset6.ipynb): due Friday May 5.
 
 Fourier series vs. DFT: If we view the DFT as a [Riemann sum](https://en.wikipedia.org/wiki/Riemann_sum) approximation for a [Fourier series](https://en.wikipedia.org/wiki/Fourier_series) coefficient (which turns out to be *exponentially* accurate for smooth periodic f(t)!), then the errors are an instance of [aliasing](https://en.wikipedia.org/wiki/Aliasing) (see e.g. the ["wagon-wheel" effect](https://en.wikipedia.org/wiki/Wagon-wheel_effect)).  For band-limited signals where we sample at a rate > twice the bandwidth, there is no aliasing and no information loss, a result known as the [Nyquist—Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem); in the common case where the bandwidth is centered at ω=0, this corresponds to sampling at more than *twice* the highest frequency.
 
