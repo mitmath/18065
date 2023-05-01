@@ -327,7 +327,7 @@ http://dx.doi.org/10.1137/S1052623499362822) — I used the "linear and separabl
 
 * Non-negative matrix factorization — guest lecture by [Prof. Ankur Moitra](https://people.csail.mit.edu/moitra/).
 
-**Further reading:** Coming soon.
+**Further reading:** See section 2.1 of Moitra's [*Algorithmic Aspects of Machine Learning*](http://people.csail.mit.edu/moitra/docs/bookexv2.pdf).  An interesting application to image analysis can be found in [this paper](http://www.cs.columbia.edu/~blei/fogm/2020F/readings/LeeSeung1999.pdf).
 
 ## Lecture 29 (Apr 21)
 
@@ -356,3 +356,10 @@ http://dx.doi.org/10.1137/S1052623499362822) — I used the "linear and separabl
 Fourier series vs. DFT: If we view the DFT as a [Riemann sum](https://en.wikipedia.org/wiki/Riemann_sum) approximation for a [Fourier series](https://en.wikipedia.org/wiki/Fourier_series) coefficient (which turns out to be *exponentially* accurate for smooth periodic f(t)!), then the errors are an instance of [aliasing](https://en.wikipedia.org/wiki/Aliasing) (see e.g. the ["wagon-wheel" effect](https://en.wikipedia.org/wiki/Wagon-wheel_effect)).  For band-limited signals where we sample at a rate > twice the bandwidth, there is no aliasing and no information loss, a result known as the [Nyquist—Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem); in the common case where the bandwidth is centered at ω=0, this corresponds to sampling at more than *twice* the highest frequency.
 
 **Further reading**: For a periodic function, a Riemann sum is equivalent to a trapezoidal rule (since the 0th and Nth samples are identical), and the exponential convergence to the integral is reviewed by [Trefethen and Weideman (2014)](https://epubs.siam.org/doi/pdf/10.1137/130932132); SGJ gave a [simplified review for IAP (2011)](https://math.mit.edu/~stevenj/trap-iap-2011.pdf). The subject of aliasing, sampling, and signal processing leads to the field of [digital signal processing (DSP)](https://en.wikipedia.org/wiki/Digital_signal_processing), on which there are many books and courses.  A classic textbook is [*Discrete-Time Signal Processing*](https://research.iaun.ac.ir/pd/naghsh/pdfs/UploadFile_2230.pdf) by Oppenheim and Schafer, and there are whole courses at MIT (like 6.3000 and 6.7000) on these topics.
+
+## Lecture 33 (May 1)
+
+* The [DTFT](https://en.wikipedia.org/wiki/Discrete-time_Fourier_transform), [windowing](https://en.wikipedia.org/wiki/Window_function) (e.g. relating DTFT to DFT) and spectral leakage.
+* [Filter design](https://en.wikipedia.org/wiki/Filter_design) and [FIR filters](https://en.wikipedia.org/wiki/Finite_impulse_response).
+
+**Further reading**: See the DSP links from lecture 32.
