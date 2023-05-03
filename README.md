@@ -363,3 +363,11 @@ Fourier series vs. DFT: If we view the DFT as a [Riemann sum](https://en.wikiped
 * [Filter design](https://en.wikipedia.org/wiki/Filter_design) and [FIR filters](https://en.wikipedia.org/wiki/Finite_impulse_response).
 
 **Further reading**: See the DSP links from lecture 32.
+
+## Lecture 34 (May 3)
+* FIR filter design = polynomial fitting.  Windowing & least-squares, or minimax design by [Parks-McClellan](https://en.wikipedia.org/wiki/Parks%E2%80%93McClellan_filter_design_algorithm) and similar.
+* Changing variables H(z) = ĥ(ω) for z=exp(iω): the [Z transform](https://en.wikipedia.org/wiki/Z-transform)
+* [IIR filters](https://en.wikipedia.org/wiki/Infinite_impulse_response): definition, relation to [rational functions](https://en.wikipedia.org/wiki/Rational_function), first-order IIR filter example, stability.
+
+**Further reading**: See the DSP links from lecture 32.
+
