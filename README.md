@@ -376,4 +376,4 @@ Fourier series vs. DFT: If we view the DFT as a [Riemann sum](https://en.wikiped
 * IIR filter stability: poles zₚ must lie inside the unit circle |zₚ|
 * IIR filter design: non-convex and complicated, lots of algorithms and approximations.
 * [Kronecker products A⊗B](https://en.wikipedia.org/wiki/Kronecker_product) and ["vectorization" vec(A)](https://en.wikipedia.org/wiki/Vectorization_(mathematics)): expressing "multidimensional linear operations" ([multilinear algebra](https://en.wikipedia.org/wiki/Multilinear_algebra)) as ordinary matrix–vector products.
-* pset 6 solutions: coming soon
+* [pset 6 solutions](psets/pset6sol.ipynb)
