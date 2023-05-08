@@ -377,3 +377,9 @@ Fourier series vs. DFT: If we view the DFT as a [Riemann sum](https://en.wikiped
 * IIR filter design: non-convex and complicated, lots of algorithms and approximations.
 * [Kronecker products A⊗B](https://en.wikipedia.org/wiki/Kronecker_product) and ["vectorization" vec(A)](https://en.wikipedia.org/wiki/Vectorization_(mathematics)): expressing "multidimensional linear operations" ([multilinear algebra](https://en.wikipedia.org/wiki/Multilinear_algebra)) as ordinary matrix–vector products.
 * [pset 6 solutions](psets/pset6sol.ipynb)
+
+## Lecture 36 (May 6)
+
+* Kronecker products, [Hadamard matrices](https://en.wikipedia.org/wiki/Hadamard_matrix), and the mixed-product property (A⊗B)(C⊗D)=AC⊗BD: Kronecker products of unitary matrices are unitary.
+* Kronecker products and the [fast Walsh–Hadamard transform (FWHT)](https://en.wikipedia.org/wiki/Fast_Walsh%E2%80%93Hadamard_transform): fast algorithms (FWHT, FFT, …) as *sparse factorizations* of dense matrices via Kronecker products, and equivalently as mono-to-multi-dimensional mappings.
+* [Sylvester equations](https://en.wikipedia.org/wiki/Sylvester_equation) and [Lyapunov equations](https://en.wikipedia.org/wiki/Lyapunov_equation): can be solved as ordinary matrix–vector equations via Kronecker products, but this naively requires Θ(n⁶) operations, whereas exploiting the structure gives Θ(n³).  Kronecker products are often a nice way to *think* about things but *not* to explicitly compute with.
